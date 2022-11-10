@@ -63,5 +63,17 @@
             <artifactId>guava</artifactId>
             <version>r05</version>
         </dependency>
+	<!-- linkis jdbc -->
+		<dependency>
+			<groupId>org.apache.linkis</groupId>
+			<artifactId>linkis-computation-client</artifactId>
+			<version>1.0.3.1</version>
+		</dependency>
+		<!-- 需要使用公司maven中央仓库下载 -->
+		<dependency>
+			<groupId>com.kingsoft.dataones</groupId>
+			<artifactId>linkis-connector</artifactId>
+			<version>1.0.3.1</version>
+		</dependency>
 	</dependencies>
 </project>
