@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  * <p/>
  */
 public enum DataBaseType {
-    MySql("mysql", "com.mysql.jdbc.Driver"),
+  /*    MySql("mysql", "com.mysql.jdbc.Driver"),
     Tddl("mysql", "com.mysql.jdbc.Driver"),
     DRDS("drds", "com.mysql.jdbc.Driver"),
     Oracle("oracle", "oracle.jdbc.OracleDriver"),
@@ -23,7 +23,23 @@ public enum DataBaseType {
     KingbaseES("kingbasees", "com.kingbase8.Driver"),
     Oscar("oscar", "com.oscar.Driver"),
     OceanBase("oceanbase", "com.alipay.oceanbase.jdbc.Driver"),
-    StarRocks("starrocks", "com.mysql.jdbc.Driver");
+    StarRocks("starrocks", "com.mysql.jdbc.Driver");*/
+
+    MySql("mysql", "org.apache.linkis.ujes.jdbc.UJESSQLDriver"),
+    Tddl("mysql", "org.apache.linkis.ujes.jdbc.UJESSQLDriver"),
+    DRDS("drds", "org.apache.linkis.ujes.jdbc.UJESSQLDriver"),
+    Oracle("oracle", "org.apache.linkis.ujes.jdbc.UJESSQLDriver"),
+    SQLServer("sqlserver", "org.apache.linkis.ujes.jdbc.UJESSQLDriver"),
+    PostgreSQL("postgresql", "org.apache.linkis.ujes.jdbc.UJESSQLDriver"),
+    RDBMS("rdbms", "com.alibaba.datax.plugin.rdbms.util.DataBaseType"),
+    DB2("db2", "com.ibm.db2.jcc.DB2Driver"),
+    ADS("ads","org.apache.linkis.ujes.jdbc.UJESSQLDriver"),
+    ClickHouse("clickhouse", "org.apache.linkis.ujes.jdbc.UJESSQLDriver"),
+    KingbaseES("kingbasees", "com.kingbase8.Driver"),
+    Oscar("oscar", "com.oscar.Driver"),
+    OceanBase("oceanbase", "com.alipay.oceanbase.jdbc.Driver"),
+    StarRocks("starrocks", "org.apache.linkis.ujes.jdbc.UJESSQLDriver"),
+    Linkis("linkis","org.apache.linkis.ujes.jdbc.UJESSQLDriver");
 
 
     private String typeName;
